@@ -7,11 +7,10 @@ if (string.IsNullOrEmpty(text))
 var tamanho = text.Length;
 var charInverter = new char[tamanho];
 
-tamanho -= 1;
 foreach (var caracter in text)
 {
-    charInverter[tamanho] = caracter;
     tamanho--;
+    charInverter[tamanho] = caracter;
 }
 
 var result = new string(charInverter);
